@@ -551,7 +551,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
-    libultrasound \
     libvideoBokeh \
     libvideofilter_only \
     libvidhance \
@@ -560,7 +559,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libxml \
     libwvdrmengine \
-    sensors.mius.proximity \
     sensors.ssc \
     sensors.touch \
     unnhal-acc-adreno \
