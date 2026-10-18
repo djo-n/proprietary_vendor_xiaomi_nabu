@@ -657,7 +657,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     irsc_util \
     ks \
-    mdm_helper \
     mi_thermald \
     msm_irqbalance \
     nv_mac \
