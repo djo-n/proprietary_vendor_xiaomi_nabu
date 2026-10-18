@@ -8,10 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/nabu/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_ETC)/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/nabu/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_ETC)/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/nabu/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/xiaomi/nabu/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
-    vendor/xiaomi/nabu/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/xiaomi/nabu/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/xiaomi/nabu/proprietary/vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb \
     vendor/xiaomi/nabu/proprietary/vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Codec_cal.acdb \
     vendor/xiaomi/nabu/proprietary/vendor/etc/acdbdata/Forte/Forte_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_General_cal.acdb \
@@ -92,7 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/nabu/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/nabu/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/xiaomi/nabu/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
-    vendor/xiaomi/nabu/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/nabu/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/nabu/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/nabu/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
@@ -381,7 +376,6 @@ PRODUCT_PACKAGES += \
     com.xiaomi.node.mimovie3rd \
     com.xiaomi.node.misegment \
     libdepthmapwrapper \
-    com.qualcomm.qti.dpm.api@1.0_vendor \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
@@ -451,7 +445,6 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdisp-aba \
     libdisplayqos \
-    libdpmqmihal \
     libdpps \
     libdrmfs \
     libdrmtime \
@@ -632,19 +625,11 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
     libmmosal \
     libmmparser_lite \
-    com.qualcomm.qti.dpm.api@1.0 \
     libdiag_system \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
     vendor.qti.diaghal@1.0 \
     CneApp \
     TimeService \
     PowerOffAlarm \
-    tcmclient \
-    com.qti.dpmframework \
-    dpmapi \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
@@ -653,7 +638,6 @@ PRODUCT_PACKAGES += \
     cdsprpcd \
     cnd \
     cnss-daemon \
-    dpmQmiMgr \
     dspservice \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
@@ -690,5 +674,4 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
-    vppservice \
-    dpmd
+    vppservice

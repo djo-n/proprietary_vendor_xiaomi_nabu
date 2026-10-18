@@ -4851,35 +4851,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.dpm.api@1.0_vendor",
-    stem: "com.qualcomm.qti.dpm.api@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth@1.0-impl-qti",
     owner: "xiaomi",
     strip: {
@@ -6804,38 +6775,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libdisplayqos.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdpmqmihal",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdpmqmihal.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "com.qualcomm.qti.dpm.api@1.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -11495,34 +11434,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.dpm.api@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdiag_system",
     owner: "xiaomi",
     strip: {
@@ -11544,129 +11455,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libcutils",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdpmctmgr",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libdpmctmgr.so",
-            ],
-            shared_libs: [
-                "libdiag_system",
-                "libbinder",
-                "libcutils",
-                "libutils",
-                "libdpmframework",
-                "com.qualcomm.qti.dpm.api@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdpmfdmgr",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libdpmfdmgr.so",
-            ],
-            shared_libs: [
-                "libdiag_system",
-                "libbinder",
-                "libcutils",
-                "libutils",
-                "libdpmframework",
-                "com.qualcomm.qti.dpm.api@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdpmframework",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libdpmframework.so",
-            ],
-            shared_libs: [
-                "libdiag_system",
-                "libbinder",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libhardware_legacy",
-                "com.qualcomm.qti.dpm.api@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdpmtcm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libdpmtcm.so",
-            ],
-            shared_libs: [
-                "libdiag_system",
-                "libbinder",
-                "libcutils",
-                "libutils",
-                "libdpmframework",
-                "com.qualcomm.qti.dpm.api@1.0",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -11736,32 +11524,6 @@ android_app_import {
         enabled: false,
     },
     product_specific: true,
-}
-
-dex_import {
-    name: "tcmclient",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system/framework/tcmclient.jar",
-    ],
-}
-
-dex_import {
-    name: "com.qti.dpmframework",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/com.qti.dpmframework.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "dpmapi",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/dpmapi.jar",
-    ],
-    system_ext_specific: true,
 }
 
 dex_import {
@@ -11918,42 +11680,6 @@ cc_prebuilt_binary {
                 "libperipheral_client",
                 "libmdmdetect",
                 "libqmiservices",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "dpmQmiMgr",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dpmQmiMgr",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libhidlbase",
-                "libqmi_cci",
-                "libqmi_client_helper",
-                "libqmiservices",
-                "libdpmqmihal",
-                "com.qualcomm.qti.dpm.api@1.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -13084,33 +12810,3 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "dpmd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/dpmd",
-            ],
-            shared_libs: [
-                "libdpmframework",
-                "libdiag_system",
-                "libhardware_legacy",
-                "libhidlbase",
-                "libcutils",
-                "libutils",
-                "com.qualcomm.qti.dpm.api@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
