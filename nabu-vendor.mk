@@ -654,7 +654,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
-    init.qcom.sensors \
     irsc_util \
     ks \
     mi_thermald \
