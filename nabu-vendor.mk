@@ -296,7 +296,6 @@ PRODUCT_PACKAGES += \
     libadiertac \
     libadpcmdec \
     libaudcal \
-    libfastcrc \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
@@ -304,7 +303,6 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libmulawdec \
     libqtigef \
-    libsmwrapper \
     libasphere \
     libshoebox \
     com.qti.actuator.nabu_cn3927 \
@@ -472,8 +470,6 @@ PRODUCT_PACKAGES += \
     libmpbase \
     liboemcrypto \
     libops \
-    libpdmapper \
-    libpdnotifier \
     libperipheral_client \
     libqcbor \
     libqisl \
@@ -550,7 +546,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.dynamicdds@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
@@ -570,7 +565,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libVC1Dec_so \
     vendor_lib_rfsa_adsp_libVC1DecDsp_skel_so \
     vendor_lib_rfsa_adsp_libapps_mem_heap_so \
-    vendor_lib_rfsa_adsp_libcalculator_skel_so \
     vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
     vendor_lib_rfsa_adsp_libcvpdsp_skel_so \
     vendor_lib_rfsa_adsp_libdspCV_skel_so \
@@ -592,7 +586,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_misound_res_spk4ch_bin \
     com.qualcomm.qti.ant@1.0 \
     libmmosal \
-    libmmparser_lite \
     CneApp \
     TimeService \
     PowerOffAlarm \
