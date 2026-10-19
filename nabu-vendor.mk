@@ -439,17 +439,13 @@ PRODUCT_PACKAGES += \
     libcne \
     libcneapiclient \
     libcneoplookup \
-    libcneqmiutils \
     libcom.qti.chinodeutils \
-    libconfigdb \
     libcpion \
     libdisp-aba \
     libdisplayqos \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libdsi_netctrl \
-    libdsutils \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libft2vendor \
@@ -462,7 +458,6 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     libmdmdetect \
-    libmdmimgload \
     libmegface \
     libmi_supernight_raw \
     libmi_supernight_raw_checker \
@@ -483,29 +478,18 @@ PRODUCT_PACKAGES += \
     libminksocket \
     libmmosal_vendor \
     libmpbase \
-    libnetmgr \
-    libnetmgr_common \
-    libnetmgr_nr_fusion \
-    libnetmgr_rmnet_ext \
     liboemcrypto \
     libops \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
     libqcbor \
-    libqcci_legacy \
-    libqcmaputils \
-    libqdi \
     libqdp \
     libqisl \
-    libqmi \
     libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
     libqmi_common_so \
     libqmi_csi \
     libqmi_encdec \
-    libqmi_legacy \
     libqmiservices \
     libqrtr \
     libqseed3 \
@@ -574,10 +558,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
     vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
     vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.iwlan@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.fm@1.0 \
@@ -625,8 +606,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
     libmmosal \
     libmmparser_lite \
-    libdiag_system \
-    vendor.qti.diaghal@1.0 \
     CneApp \
     TimeService \
     PowerOffAlarm \
@@ -655,7 +634,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
     irsc_util \
-    ks \
     mi_thermald \
     msm_irqbalance \
     nv_mac \
