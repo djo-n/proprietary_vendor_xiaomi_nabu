@@ -386,16 +386,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
     libFaceGrade \
-    libGPQTEEC_vendor \
-    libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libHalSuperSensorServer \
     libMegviiFacepp-0.5.2 \
     libQSEEComAPI \
-    libQTEEConnector_vendor \
     libSNPE \
-    libSecureUILib \
     libStDrvInt \
     libSuperSensor \
     libSuperSensorCPU \
@@ -452,7 +448,6 @@ PRODUCT_PACKAGES += \
     libhta_hexagon_runtime \
     libidl \
     libkeymasterdeviceutils \
-    libkeymasterprovision \
     libkeymasterutils \
     libmdmdetect \
     libmegface \
