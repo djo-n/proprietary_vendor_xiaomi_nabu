@@ -306,9 +306,6 @@ PRODUCT_PACKAGES += \
     libqtigef \
     libsmwrapper \
     libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
     libshoebox \
     com.qti.actuator.nabu_cn3927 \
     com.qti.sensor.nabu_ov13b10 \
@@ -484,7 +481,6 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libqcbor \
-    libqdp \
     libqisl \
     libqmi_cci \
     libqmi_common_so \
@@ -546,8 +542,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
     vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
@@ -561,7 +555,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.dynamicdds@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0 \
@@ -602,7 +595,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_misound_res_headphone_bin \
     vendor_lib_rfsa_adsp_misound_res_spk_bin \
     vendor_lib_rfsa_adsp_misound_res_spk4ch_bin \
-    vendor_lib_rfsa_adsp_tas25xx_TI_0_bin \
     com.qualcomm.qti.ant@1.0 \
     libmmosal \
     libmmparser_lite \
@@ -641,7 +633,6 @@ PRODUCT_PACKAGES += \
     pm-proxy \
     pm-service \
     power_off_alarm \
-    ppd \
     qrtr-ns \
     qseecomd \
     rmt_storage \
