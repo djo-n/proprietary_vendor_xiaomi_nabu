@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/nabu
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/nabu/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_ETC)/permissions/privapp-permissions-qti.xml \
-    vendor/xiaomi/nabu/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_ETC)/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/nabu/proprietary/vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb \
     vendor/xiaomi/nabu/proprietary/vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Codec_cal.acdb \
     vendor/xiaomi/nabu/proprietary/vendor/etc/acdbdata/Forte/Forte_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_General_cal.acdb \
